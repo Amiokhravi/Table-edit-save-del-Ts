@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="TableCss.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+<!--    <script src="src/TableTScript.ts"></script>-->
+
+
+</head>
+<body>
+
+
+<table id="mytable" class="pagination" data-pagecount="3">
+    <thead>
+    <tr>
+         <th colspan="6">
+             <input type="text" id="Search" placeholder="Search for NAMES..">
+         </th>
+
+    </tr>
+    <tr>
+        <th onclick="sortTable(0)">ROW</th>
+        <th onclick="sortTable(1)">NAME <i class="bi bi-sort-alpha-down"></i></th>
+        <th onclick="sortTable(2)">AGE <i class="bi bi-sort-alpha-down"></i> </th>
+        <th onclick="sortTable(3)">City <i class="bi bi-sort-alpha-down"></i> </th>
+        <th onclick="sortTable(4)">COUNTRY <i class="bi bi-sort-alpha-down"></i> </th>
+        <th onclick="sortTable(5)">REMOVE/EDIT</th>
+    </tr>
+    <thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Ali</td>
+        <td>20</td>
+        <td>Mashhad</td>
+        <td>iran</td>
+        <td><i class="bi bi-pencil-square edit"></i> <i class="bi bi-trash delete"></i></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>james</td>
+        <td>22</td>
+        <td>LosAngeles</td>
+        <td>America</td>
+        <td><i class="bi bi-pencil-square edit"></i> <i class="bi bi-trash delete"></i></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>mohammad</td>
+        <td>24</td>
+        <td>tehran</td>
+        <td>iran</td>
+        <td><i class="bi bi-pencil-square edit"></i> <i class="bi bi-trash delete"></i></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>sami</td>
+        <td>25</td>
+        <td>M1td</td>
+        <td>iran</td>
+        <td><i class="bi bi-pencil-square edit"></i> <i class="bi bi-trash delete"></i></td>
+    </tr>
+    </tbody>
+
+</table>
+<div id="pageNavPosition" class="pager-nav"></div>
+<blockquote><i class="bi bi-person-plus" id="add_icon"></i></blockquote>
+
+
+<div class="background_medal">
+
+    <div class="medal">
+        <div class="medal_header">
+            <div>
+                <h3>ADD NEW MEMBER</h3>
+            </div>
+
+        </div>
+
+        <div class="medal_main">
+            <table>
+                <tr>
+                    <td><label for="name" class="label_insert">NAME</label></td>
+                    <td><input type="text" id="name" class="input_insert"></td>
+                    <td><label for="age">AGE</label></td>
+                    <td><input type="number" id="age" class="input_insert"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="city" class="label_insert">CITY</label></td>
+                    <td><input type="text" id="city" class="input_insert"></td>
+                    <td><label for="country">COUNTRY</label></td>
+                    <td><input type="text" id="country" class="input_insert"></td>
+                </tr>
+                <tr id="medal_buttons">
+                    <td>
+                        <button type="submit" id="save" class="editing">SAVE</button>
+
+
+                    </td>
+                    <td>
+                        <button type="button" class="cancel">CANCEL</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!--مدال باکس ادیت-->
+<div class="background_medal">
+
+    <div class="medal">
+        <div class="medal_header">
+            <div>
+                <h3>Edit MEMBER</h3>
+            </div>
+
+        </div>
+
+        <div class="medal_main">
+            <table>
+                <tr>
+                    <td><label for="name" class="label_insert">NAME</label></td>
+                    <td><input type="text" id="edit_name" class="input_insert"></td>
+                    <td><label for="age">AGE</label></td>
+                    <td><input type="number" id="edit_age" class="input_insert"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="city" class="label_insert">CITY</label></td>
+                    <td><input type="text" id="edit_city" class="input_insert"></td>
+                    <td><label for="country">COUNTRY</label></td>
+                    <td><input type="text" id="edit_country" class="input_insert"></td>
+                </tr>
+                <tr id="edit_medal_buttons">
+                    <td>
+                        <button type="submit" id="edit_save" class="editing">SAVE</button>
+
+                    </td>
+                    <td>
+                        <button type="button" class="cancel">CANCEL</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+<script src="src/TableTScript.js"></script>
+<!--<script src="src/table.js"></script>-->
+</body>

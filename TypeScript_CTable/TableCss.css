@@ -1,0 +1,267 @@
+body{
+
+}
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#mytable tr:hover:not(thead tr) {
+    background-color: #bdbdf6;
+}
+thead tr:hover {
+cursor: pointer;
+}
+table * {
+    position: relative;
+}
+
+table td, table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+    background: #86a4ff;
+    font-size: 16px;
+}
+
+table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td, table th {
+    text-align: left;
+}
+
+table td.l, table th.l {
+    text-align: right;
+}
+
+table td.c, table th.c {
+    text-align: center;
+}
+
+table td.r, table th.r {
+    text-align: center;
+}
+
+@media screen and (max-width: 35.5em) {
+    table {
+        display: block;
+    }
+
+    table > *, table tr, table td, table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before {
+        content: "Code";
+    }
+
+    table tbody tr td:nth-child(2):before {
+        content: "Stock";
+    }
+
+    table tbody tr td:nth-child(3):before {
+        content: "Cap";
+    }
+
+    table tbody tr td:nth-child(4):before {
+        content: "Inch";
+    }
+
+    table tbody tr td:nth-child(5):before {
+        content: "Box Type";
+    }
+}
+
+body {
+    background: #9BC86A;
+    font: 400 14px "Calibri", "Arial";
+    padding: 20px;
+}
+
+blockquote {
+    color: white;
+    text-align: center;
+}
+
+#add_icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: yellow;
+}
+
+#add_icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: yellow;
+}
+
+.edit {
+    font-size: 17px;
+    cursor: pointer;
+    color: yellow;
+    padding-right: 9px;
+    padding-left: 26px;
+}
+
+.delete {
+    font-size: 17px;
+    cursor: pointer;
+    color: red;
+}
+/*نکته مهم در مورد زیر اگر دیدی باکسی بالا و پایینش میره و به بقیه المنت ها واکنش نشون میده کافیه پوزشنشو مثل زیر صفر کنی */
+.background_medal{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */    z-index: 1;
+    position: fixed;
+}
+.medal {
+
+    width: auto;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.medal_header {
+    background: slateblue;
+    padding-bottom: 25px;
+    justify-content: center;
+    }
+.medal_header h3 {
+    transform: translateY(10px);
+}
+
+.medal_header h3 {
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+    margin: 0px;
+}
+
+.medal_main {
+    background: whitesmoke;
+}
+
+.input_insert {
+    margin-right: 167px;
+    height: 17px;
+    border: 1px solid gray;
+    background: whitesmoke;
+}
+.label_insert {
+    margin-left:30px;
+    background: whitesmoke;
+}
+#medal_buttons{
+    left:678px ;
+}
+#save{
+    background: #5c5cff;
+    color: white;
+    width: 60px;
+    height: 26px;
+    border: none;
+    cursor:pointer;
+}
+.cancel{
+    background: #ff3636;
+    color: white;
+    width: 70px;
+    height: 26px;
+    border: none;
+    cursor:pointer;
+}
+#pageNavPosition {
+    color: #75a8f5;
+    font-size: 1rem;
+    text-align: center;
+
+}
+#pageNavPosition span{
+    padding-right: 5px;
+}
+#pageNavPosition .pg-prev{
+   display:inline-block; !important;
+}
+/*مدال ایدت*/
+
+#edit_save{
+    background: #5c5cff;
+    color: white;
+    width: 60px;
+    height: 26px;
+    border: none;
+    cursor:pointer;
+}
+
+#edit_medal_buttons{
+    left:678px ;
+}
+/*serach */
+#Search{
+    background-image: url(./bootstrap-icons/font/fonts/icons8-search-24.png);
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    width: 25%;
+    font-size: 13px;
+    padding: 6px 15px 8px 30px;
+    border: 1px solid #9ca8e5;
+    margin-bottom: 5px;
+}
