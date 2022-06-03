@@ -5,3 +5,4 @@
 3. Delete Member
 4. Paging
 5. Sorting
+6. Searching
